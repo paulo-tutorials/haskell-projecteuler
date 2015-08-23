@@ -11,4 +11,4 @@ main = hspec $
         it "return the smallest number that can be divided by each number from 1 to 10" $
             smallestMultiple 10 `shouldBe` 2520
         it "return the smallest number that can be divided by each number from 1 to 20" $
-            smallestMultiple 20 `shouldBe` 2520
+            smallestMultiple 20 `shouldBe` 232792560
