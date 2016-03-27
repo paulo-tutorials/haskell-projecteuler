@@ -4,8 +4,14 @@
 
 If you do, you'll not learn and will just lose your time. If you are tempted to look, ask for tips on [StackOverflow](http://stackoverflow.com) or send me an email.
 
-Tests with [HSpec](http://hspec.github.io/).
-To run a specific test (they end with *Spec.hs*):
+**Setup**
 ```
-runhaskell nameOfFileSpec.hs
+cabal sandbox init
+cabal update
+cabal install --only-dependencies
+```
+
+**Run Tests**
+```
+cabal test
 ```
