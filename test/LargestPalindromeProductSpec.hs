@@ -3,8 +3,11 @@ module LargestPalindromeProductSpec where
 import Test.Hspec
 import LargestPalindromeProduct
 
-main :: IO()
-main = hspec $
+main :: IO ()
+main = hspec spec
+
+spec :: Spec
+spec = do
     describe "Palindrones" $ do
         it "return the largest palindrone made from the product of two 2-digit number" $
             largestPalindrome 100 `shouldBe` 9009

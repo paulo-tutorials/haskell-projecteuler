@@ -3,8 +3,11 @@ module SmallestMultipleSpec where
 import Test.Hspec
 import SmallestMultiple
 
-main :: IO()
-main = hspec $
+main :: IO ()
+main = hspec spec
+
+spec :: Spec
+spec = do
     describe "number multiples" $ do
         it "return true when check if 720 is multiple of the numbers from 1 to 6" $
             isMultipleOfAll 720 [1..6] `shouldBe` True

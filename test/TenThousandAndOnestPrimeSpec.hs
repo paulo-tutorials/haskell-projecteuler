@@ -4,7 +4,10 @@ import Test.Hspec
 import TenThousandAndOnestPrime 
 
 main :: IO ()
-main = hspec $
+main = hspec spec
+
+spec :: Spec
+spec = do
     describe "Primes" $ do
         it "return the 6th prime" $
             nthPrime 6 `shouldBe` 13

@@ -3,8 +3,11 @@ module LargestPrimeFactorSpec where
 import Test.Hspec
 import LargestPrimeFactor
 
-main :: IO()
-main = hspec $
+main :: IO ()
+main = hspec spec
+
+spec :: Spec
+spec = do
     describe "Primes" $ do
         it "return true when check if 43 is prime" $
             isPrime 43 `shouldBe` True

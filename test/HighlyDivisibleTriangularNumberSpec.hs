@@ -4,7 +4,10 @@ import Test.Hspec
 import HighlyDivisibleTriangularNumber
 
 main :: IO ()
-main = hspec $
+main = hspec spec
+
+spec :: Spec
+spec = do
     describe "Triangle factors" $ do
         it "return the three divisors of the number 4th triangle" $
             triangleFactorsOfNthNumber 4 `shouldBe` [1,2,5,10]

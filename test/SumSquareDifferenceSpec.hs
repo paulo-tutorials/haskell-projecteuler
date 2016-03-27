@@ -4,7 +4,10 @@ import Test.Hspec
 import SumSquareDifference
 
 main :: IO ()
-main = hspec $
+main = hspec spec
+
+spec :: Spec
+spec = do
     describe "Square Numbers" $ do
         it "return the square sum's of numbers from 1 to 10" $
             sumOfNaturalNumbersSquare 10 `shouldBe` 385

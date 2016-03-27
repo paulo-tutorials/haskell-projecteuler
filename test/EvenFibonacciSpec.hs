@@ -3,8 +3,11 @@ module EvenFibonacciSpec where
 import Test.Hspec
 import EvenFibonacci
 
-main :: IO()
-main  = hspec $ do
+main :: IO ()
+main = hspec spec
+
+spec :: Spec
+spec = do
     describe "Fibonacci sequence" $ do
         it "obtain the 6th element" $
             fib 6 `shouldBe` 13

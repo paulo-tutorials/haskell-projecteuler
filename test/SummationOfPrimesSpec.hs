@@ -4,7 +4,10 @@ import Test.Hspec
 import SummationOfPrimes
 
 main :: IO ()
-main = hspec $ do
+main = hspec spec
+
+spec :: Spec
+spec = do
     describe "sum of primes" $ do
         it "return the sum primes below 10" $
             sumOfPrimesBelow 10 `shouldBe` 17
